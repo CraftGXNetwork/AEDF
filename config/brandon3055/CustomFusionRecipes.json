@@ -1,0 +1,111 @@
+[
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:awakened_core",
+        "catalyst": "minecraft:nether_star"
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaotic_energy_core",
+        "catalyst": "draconicevolution:draconic_energy_core"
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:chaotic_core",
+        "catalyst": "draconicevolution:chaos_shard"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:draconic_core",
+        "catalyst": "minecraft:nether_star",
+        "energy": 25000,
+        "tier": 0,
+        "ingredients": [
+            "minecraft:gold_block",
+            "draconicevolution:draconium_block",
+            "minecraft:gold_block",
+            "draconicevolution:draconium_block",
+            "botania:manaresource",
+            "extendedcrafting:material,1,40",
+            "botania:manaresource",
+            "extendedcrafting:material,1,40",
+            "botania:manaresource",
+            "actuallyadditions:item_misc,1,19",
+            "botania:manaresource",
+            "actuallyadditions:item_misc,1,19"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:wyvern_core",
+        "catalyst": "thaumcraft:void_seed",
+        "energy": 50000000,
+        "tier": 0,
+        "ingredients": [
+            "draconicevolution:draconium_block,1,1",
+            "thaumcraft:ingot,1,1",
+            "draconicevolution:draconium_block,1,1",
+            "thaumcraft:ingot,1,1",
+            "draconicevolution:draconium_block,1,1",
+            "thaumcraft:ingot,1,1",
+            "draconicevolution:draconium_block,1,1",
+            "thaumcraft:ingot,1,1",
+            "draconicevolution:draconic_core",
+            "thaumcraft:module",
+            "draconicevolution:draconic_core",
+            "thaumcraft:module,1,1",
+            "draconicevolution:draconic_core",
+            "thaumcraft:mind",
+            "draconicevolution:draconic_core"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:awakened_core",
+        "catalyst": "botania:manaresource,1,14",
+        "energy": 2500000000,
+        "tier": 1,
+        "ingredients": [
+            "draconicevolution:draconic_block",
+            "minecraft:dragon_breath",
+            "draconicevolution:draconic_block",
+            "minecraft:dragon_breath",
+            "draconicevolution:draconic_block",
+            "minecraft:dragon_breath",
+            "draconicevolution:draconic_block",
+            "minecraft:dragon_breath",
+            "draconicevolution:wyvern_core",
+            "botania:manaresource,1,7",
+            "draconicevolution:wyvern_core",
+            "botania:manaresource,1,8",
+            "draconicevolution:wyvern_core",
+            "botania:manaresource,1,9",
+            "draconicevolution:wyvern_core"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:chaotic_core",
+        "catalyst": "astralsorcery:itemshiftingstar",
+        "energy": 100000000000,
+        "tier": 2,
+        "ingredients": [
+            "draconicevolution:awakened_core",
+            "astralsorcery:itemcraftingcomponent,1,1",
+            "draconicevolution:awakened_core",
+            "astralsorcery:itemcraftingcomponent,1,1",
+            "draconicevolution:awakened_core",
+            "astralsorcery:itemcraftingcomponent,1,1",
+            "draconicevolution:awakened_core",
+            "astralsorcery:itemcraftingcomponent,1,1",
+            "avaritia:resource,1,4",
+            "draconicevolution:chaos_shard,1,1",
+            "avaritia:resource,1,4",
+            "draconicevolution:chaos_shard,1,1",
+            "avaritia:resource,1,4",
+            "draconicevolution:chaos_shard,1,1",
+            "avaritia:resource,1,4"
+        ]
+    }
+    
+]
