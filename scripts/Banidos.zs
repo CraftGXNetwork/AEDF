@@ -172,5 +172,8 @@ Banir(<tconstruct:throwball:1>, "§c» §4Item Banido. §eMotivo: Grif§c «", f
 Banir(<darkutils:fake_tnt>, "§c» §4Item Banido. §eMotivo: Grif§c «", false); 
 Banir(<thaumcraft:bottle_taint>, "§c» §4Item Banido. §eMotivo: Grif§c «", false); 
 Banir(<avaritia:extreme_crafting_table>, "§c» §4Item Removido. §eMotivo: Usar A Outra Craft Table§c «", false);
+Banir(<extrautils2:bagofholding>, "§c» §4Item Banido. §eMotivo: DUPE§c «", false); 
+Banir(<rftools:shape_card>, "§c» §4Item Banido. §eMotivo: Grif§c «", false); 
+Banir(<rftools:shape_card:1>, "§c» §4Item Banido. §eMotivo: Grif§c «", false);
 
 print("Banidos iniciado com sucesso");

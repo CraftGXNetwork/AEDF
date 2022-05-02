@@ -163,6 +163,21 @@ recipes.remove(<mysticalagriculture:crafting:21>);
 recipes.remove(<mysticalagradditions:insanium:1>);
 recipes.remove(<enderio:block_enchanter>);
 recipes.remove(<thermalexpansion:machine:4>);
+recipes.remove(<draconicevolution:fusion_crafting_core>);
+recipes.remove(<rftools:shape_card>); 
+recipes.remove(<rftools:shape_card:1>);   
+recipes.remove(<extrautils2:bagofholding>);
+recipes.remove(<chunkloaders:single_chunk_loader>);
+recipes.remove(<chunkloaders:basic_chunk_loader>);
+recipes.remove(<chunkloaders:advanced_chunk_loader>);
+recipes.remove(<chunkloaders:ultimate_chunk_loader>);
+recipes.remove(<extrautils2:angelring>);
+recipes.remove(<extrautils2:angelring:1>);
+recipes.remove(<extrautils2:angelring:2>);
+recipes.remove(<extrautils2:angelring:3>);
+recipes.remove(<extrautils2:angelring:4>);
+recipes.remove(<extrautils2:angelring:5>);
+recipes.remove(<mekanism:basicblock:8>);
 mods.thermalexpansion.Infuser.addRecipe(<draconicevolution:draconium_block:1>, <draconicevolution:draconium_block>, 250000);
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:itemilluminationwand>, 2);
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:itemexchangewand>, 1);
@@ -1060,3 +1075,46 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:machine:4>, [
 	[<mekanism:basicblock:8>, <ore:hardenedClay>, <cookingforblockheads:sink>, <immersiveengineering:metal_device1:13>, <cookingforblockheads:sink>, <ore:hardenedClay>, <mekanism:basicblock:8>], 
 	[<mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:basicblock:8>]
 ]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <draconicevolution:fusion_crafting_core>, [
+	[<ore:blockLapis>, <ore:fenceSteel>, <ore:blockDiamond>, <ore:fenceSteel>, <ore:blockLapis>], 
+	[<ore:fenceSteel>, <ore:blockDraconium>, <ore:gemLapis>, <ore:blockDraconium>, <ore:fenceSteel>], 
+	[<ore:blockDiamond>, <ore:gemLapis>, <mysticalagriculture:master_infusion_crystal>, <ore:gemLapis>, <ore:blockDiamond>], 
+	[<ore:fenceSteel>, <ore:blockDraconium>, <ore:gemLapis>, <ore:blockDraconium>, <ore:fenceSteel>], 
+	[<ore:blockLapis>, <ore:fenceSteel>, <ore:blockDiamond>, <ore:fenceSteel>, <ore:blockLapis>]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <chunkloaders:basic_chunk_loader>, [
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <chunkloaders:advanced_chunk_loader>, [
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <chunkloaders:ultimate_chunk_loader>, [
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>], 
+	[<chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>, <chunkloaders:single_chunk_loader>]
+]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:4>, [<extrautils2:angelring>, <ore:nuggetGold>, <ore:nuggetGold>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:3>, [<extrautils2:angelring>, <ore:leather>, <ore:leather>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:2>, [<extrautils2:angelring>, <ore:elvenPixieDust>, <ore:elvenPixieDust>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:5>, [<extrautils2:angelring>, <actuallyadditions:item_misc:15>, <actuallyadditions:item_misc:15>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:1>, [<extrautils2:angelring>, <ore:feather>, <ore:feather>]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:8>, [
+	[<ore:ingotOsmium>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:ingotOsmium>], 
+	[<ore:blockSteel>, <ore:ingotOsmium>, <ore:blockGlassColorless>, <ore:ingotOsmium>, <ore:blockSteel>], 
+	[<ore:blockSteel>, <ore:blockGlassColorless>, <ore:blockOsmium>, <ore:blockGlassColorless>, <ore:blockSteel>], 
+	[<ore:blockSteel>, <ore:ingotOsmium>, <ore:blockGlassColorless>, <ore:ingotOsmium>, <ore:blockSteel>], 
+	[<ore:ingotOsmium>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:ingotOsmium>]
+]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <chunkloaders:single_chunk_loader> * 49, [<chunkloaders:ultimate_chunk_loader>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <chunkloaders:single_chunk_loader> * 25, [<chunkloaders:advanced_chunk_loader>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <chunkloaders:single_chunk_loader> * 9, [<chunkloaders:basic_chunk_loader>]);
