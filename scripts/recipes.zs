@@ -161,7 +161,7 @@ recipes.remove(<mysticalagriculture:crafting:19>);
 recipes.remove(<mysticalagriculture:crafting:20>);
 recipes.remove(<mysticalagriculture:crafting:21>); 
 recipes.remove(<mysticalagradditions:insanium:1>);
-recipes.remove(<enderio:block_enchanter>);
+recipes.remove(<enderio:block_enchanter>); 
 recipes.remove(<thermalexpansion:machine:4>);
 recipes.remove(<draconicevolution:fusion_crafting_core>);
 recipes.remove(<rftools:shape_card>); 
@@ -175,9 +175,11 @@ recipes.remove(<extrautils2:angelring>);
 recipes.remove(<extrautils2:angelring:1>);
 recipes.remove(<extrautils2:angelring:2>);
 recipes.remove(<extrautils2:angelring:3>);
-recipes.remove(<extrautils2:angelring:4>);
+recipes.remove(<extrautils2:angelring:4>); 
 recipes.remove(<extrautils2:angelring:5>);
-recipes.remove(<mekanism:basicblock:8>);
+recipes.remove(<extrautils2:teleporter:1>);
+recipes.remove(<mekanism:basicblock:8>); 
+recipes.remove(<botania:endereyeblock>);
 mods.thermalexpansion.Infuser.addRecipe(<draconicevolution:draconium_block:1>, <draconicevolution:draconium_block>, 250000);
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:itemilluminationwand>, 2);
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:itemexchangewand>, 1);
@@ -187,7 +189,7 @@ mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:5>);
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:6>);
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:13>);
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:16>);
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:12>); 
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:12>);  
 
 
 //Blood Magic
@@ -358,7 +360,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock:4>, [
 	[null, <ore:ingotOsmium>, <ore:ingotOsmium>, <ore:ingotOsmium>, <ore:ingotOsmium>, <ore:ingotOsmium>, null], 
 	[<ore:blockRefinedObsidian>, <ore:alloyUltimate>, <ore:battery>, <ore:battery>, <ore:battery>, <ore:alloyUltimate>, <ore:blockRefinedObsidian>], 
 	[<ore:ingotOsmium>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:teleportationcore>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <ore:ingotOsmium>], 
-	[<mekanism:energycube>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:atomicdisassembler>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:energycube>], 
+	[<mekanism:energycube>, <mekanism:basicblock:8>, <ore:gearVibrant>, <mekanism:atomicdisassembler>, <ore:gearVibrant>, <mekanism:basicblock:8>, <mekanism:energycube>], 
 	[<ore:ingotOsmium>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <mekanism:teleportationcore>, <mekanism:basicblock:8>, <mekanism:basicblock:8>, <ore:ingotOsmium>], 
 	[<ore:ingotOsmium>, <ore:circuitUltimate>, <ore:battery>, <ore:battery>, <ore:battery>, <ore:circuitUltimate>, <ore:ingotOsmium>], 
 	[<ore:blockRefinedObsidian>, <ore:ingotSteel>, <ore:ingotSteel>, <mekanism:machineblock2:14>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:blockRefinedObsidian>]
@@ -1108,13 +1110,37 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:3>, [
 mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:2>, [<extrautils2:angelring>, <ore:elvenPixieDust>, <ore:elvenPixieDust>]);
 mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:5>, [<extrautils2:angelring>, <actuallyadditions:item_misc:15>, <actuallyadditions:item_misc:15>]);
 mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring:1>, [<extrautils2:angelring>, <ore:feather>, <ore:feather>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring>, [<extrautils2:angelring:1>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring>, [<extrautils2:angelring:2>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring>, [<extrautils2:angelring:3>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring>, [<extrautils2:angelring:4>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:angelring>, [<extrautils2:angelring:5>]);
+
 mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:8>, [
-	[<ore:ingotOsmium>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:ingotOsmium>], 
-	[<ore:blockSteel>, <ore:ingotOsmium>, <ore:blockGlassColorless>, <ore:ingotOsmium>, <ore:blockSteel>], 
-	[<ore:blockSteel>, <ore:blockGlassColorless>, <ore:blockOsmium>, <ore:blockGlassColorless>, <ore:blockSteel>], 
-	[<ore:blockSteel>, <ore:ingotOsmium>, <ore:blockGlassColorless>, <ore:ingotOsmium>, <ore:blockSteel>], 
-	[<ore:ingotOsmium>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:ingotOsmium>]
+	[<ore:ingotOsmium>, <ore:plateSteel>, <ore:gearSteel>, <ore:plateSteel>, <ore:ingotOsmium>], 
+	[<ore:plateSteel>, <ore:ingotOsmium>, <ore:blockGlassColorless>, <ore:ingotOsmium>, <ore:plateSteel>], 
+	[<ore:gearSteel>, <ore:blockGlassColorless>, <ore:itemMachineChassi>, <ore:blockGlassColorless>, <ore:gearSteel>], 
+	[<ore:plateSteel>, <ore:ingotOsmium>, <ore:blockGlassColorless>, <ore:ingotOsmium>, <ore:plateSteel>], 
+	[<ore:ingotOsmium>, <ore:plateSteel>, <ore:gearSteel>, <ore:plateSteel>, <ore:ingotOsmium>]
 ]);
 mods.extendedcrafting.TableCrafting.addShapeless(0, <chunkloaders:single_chunk_loader> * 49, [<chunkloaders:ultimate_chunk_loader>]);
 mods.extendedcrafting.TableCrafting.addShapeless(0, <chunkloaders:single_chunk_loader> * 25, [<chunkloaders:advanced_chunk_loader>]);
 mods.extendedcrafting.TableCrafting.addShapeless(0, <chunkloaders:single_chunk_loader> * 9, [<chunkloaders:basic_chunk_loader>]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:angelring>, [
+	[null, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, null], 
+	[<ore:blockGold>, <ic2:crafting:37>, <gravisuite:advancedjetpack:26>, <ic2:crafting:37>, <ore:blockGold>], 
+	[<ore:blockGold>, <ore:plateIridiumAlloy>, <ore:cofh:potion>, <ore:plateIridiumAlloy>, <ore:blockGold>], 
+	[<ore:blockGold>, <mekanism:jetpack>, <ic2:crafting:37>, <ic2:jetpack_electric:26>, <ore:blockGold>], 
+	[null, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, null]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:teleporter:1>, [
+	[<ore:plateQuartzBlack>, <ore:cofh:potion>, <ore:plateQuartzBlack>], 
+	[<ore:torch>, <ore:compressed8xCobblestone>, <ore:torch>], 
+	[<ore:plateQuartzBlack>, <ore:netherStar>, <ore:plateQuartzBlack>]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <botania:endereyeblock>, [
+	[<ore:dustEnderPearl>, <ore:pearlEnderEye>, <ore:dustEnderPearl>], 
+	[<ore:pearlEnderEye>, <ore:blockEnderium>, <ore:pearlEnderEye>], 
+	[<ore:dustEnderPearl>, <ore:pearlEnderEye>, <ore:dustEnderPearl>]
+]);

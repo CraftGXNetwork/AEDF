@@ -1,0 +1,20 @@
+{
+  "name": "compactmachines3:wallbreakable",
+  "target-block": "compactmachines3:wallbreakable",
+  "target-count": 4,
+
+  "input-types": {
+    "i": { "id": "botania:endereyeblock" },
+    "r": { "id": "minecraft:redstone_wire" }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["r"]
+    ],
+    [
+      ["i"]
+    ]
+  ]
+}
