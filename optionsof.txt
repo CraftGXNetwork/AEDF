@@ -2,14 +2,14 @@ ofFogType:1
 ofFogStart:0.8
 ofMipmapType:0
 ofOcclusionFancy:false
-ofSmoothFps:false
+ofSmoothFps:true
 ofSmoothWorld:true
-ofAoLevel:0.0
+ofAoLevel:1.0
 ofClouds:0
 ofCloudsHeight:0.0
 ofTrees:0
 ofDroppedItems:0
-ofRain:0
+ofRain:1
 ofAnimatedWater:2
 ofAnimatedLava:2
 ofAnimatedFire:false
@@ -33,7 +33,7 @@ ofAutoSaveTicks:4000
 ofBetterGrass:3
 ofConnectedTextures:2
 ofWeather:true
-ofSky:true
+ofSky:false
 ofStars:true
 ofSunMoon:true
 ofVignette:0
@@ -47,7 +47,7 @@ ofProfiler:false
 ofBetterSnow:false
 ofSwampColors:true
 ofRandomEntities:true
-ofSmoothBiomes:true
+ofSmoothBiomes:false
 ofCustomFonts:true
 ofCustomColors:true
 ofCustomItems:true
@@ -58,8 +58,8 @@ ofEmissiveTextures:true
 ofLazyChunkLoading:true
 ofRenderRegions:false
 ofSmartAnimations:false
-ofDynamicFov:true
-ofAlternateBlocks:true
+ofDynamicFov:false
+ofAlternateBlocks:false
 ofDynamicLights:3
 ofScreenshotSize:1
 ofCustomEntityModels:true
