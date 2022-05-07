@@ -80,6 +80,7 @@ recipes.remove(<enderio:block_buffer:2>);
 recipes.remove(<enderio:block_buffer>);
 recipes.remove(<enderio:block_inventory_panel>);
 recipes.remove(<thaumcraft:seal:5>);
+recipes.remove(<conarm:travel_sack>);
 recipes.remove(<thaumcraft:seal:6>);
 recipes.remove(<thaumcraft:seal:12>);
 recipes.remove(<thaumcraft:seal:13>);
@@ -485,10 +486,18 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:mob_duplic
 recipes.remove(<industrialupgrade:basemachine:8>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <industrialupgrade:basemachine:8>, [
 	[<ore:machineBlockElite>, <industrialupgrade:quantumitems4>, <industrialupgrade:quantumitems4>, <industrialupgrade:quantumitems4>, <ore:machineBlockElite>], 
-	[<industrialupgrade:quantumitems4>, <industrialupgrade:circuit:10>, <mekanism:machineblock:4>, <industrialupgrade:circuit:10>, <industrialupgrade:quantumitems4>], 
-	[<industrialupgrade:quantumitems4>, <appliedenergistics2:dense_energy_cell>, <mekanism:energycube>, <appliedenergistics2:dense_energy_cell>, <industrialupgrade:quantumitems4>], 
+	[<industrialupgrade:quantumitems4>, <industrialupgrade:circuit:10>, <mekanism:energycube>, <industrialupgrade:circuit:10>, <industrialupgrade:quantumitems4>], 
+	[<environmentaltech:void_ore_miner_cont_4>, <appliedenergistics2:dense_energy_cell>, <draconicevolution:dragon_heart>, <appliedenergistics2:dense_energy_cell>, <mekanism:machineblock:4>], 
 	[<industrialupgrade:quantumitems4>, <industrialupgrade:quantumitems6>, <extrautils2:opinium:8>, <industrialupgrade:quantumitems6>, <industrialupgrade:quantumitems4>], 
-	[<ore:machineBlockElite>, <industrialupgrade:quantumitems4>, <industrialupgrade:quantumitems4>, <industrialupgrade:quantumitems4>, <ore:machineBlockElite>]
+	[<ore:machineBlockElite>, <industrialupgrade:quantumitems4>, <industrialupgrade:analyzermodule>, <industrialupgrade:quantumitems4>, <ore:machineBlockElite>]
+]);
+recipes.remove(<industrialupgrade:basemachine3:4>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <industrialupgrade:basemachine3:4>, [
+	[<techreborn:machine_casing:2>, <ore:skullSkeletalContractor>, <industrialupgrade:quantumitems6>, <ore:itemSkull>, <techreborn:machine_casing:2>], 
+	[<ore:skullSentientEnder>, <actuallyadditions:item_misc:20>, <actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:item_misc:20>, <ore:skullZombieFrankenstein>], 
+	[<industrialupgrade:quantumitems6>, <actuallyadditions:block_crystal_empowered:4>, <enderio:block_powered_spawner>, <actuallyadditions:block_crystal_empowered:4>, <industrialupgrade:quantumitems6>], 
+	[<ore:skullZombieFrankenstein>, <actuallyadditions:item_misc:20>, <extrautils2:opinium:8>, <actuallyadditions:item_misc:20>, <ore:skullSentientEnder>], 
+	[<techreborn:machine_casing:2>, <ore:itemSkull>, <industrialupgrade:quantumitems6>, <ore:skullSkeletalContractor>, <techreborn:machine_casing:2>]
 ]);
 recipes.remove(<threng:machine:2>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <threng:machine:2>, [
@@ -1129,13 +1138,13 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <chunkloaders:single_chunk_l
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:angelring>, [
 	[null, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, null], 
-	[<ore:blockGold>, <ic2:crafting:37>, <gravisuite:advancedjetpack:26>, <ic2:crafting:37>, <ore:blockGold>], 
-	[<ore:blockGold>, <ore:plateIridiumAlloy>, <ore:cofh:potion>, <ore:plateIridiumAlloy>, <ore:blockGold>], 
-	[<ore:blockGold>, <mekanism:jetpack>, <ic2:crafting:37>, <ic2:jetpack_electric:26>, <ore:blockGold>], 
+	[<ore:blockGold>, <ore:plateIridiumAlloy>, <mekanism:jetpack>, <ore:plateIridiumAlloy>, <ore:blockGold>], 
+	[<ore:blockGold>, <gravisuite:crafting:3>, <ic2:crafting:37>, <gravisuite:crafting:3>, <ore:blockGold>], 
+	[<ore:blockGold>, <ic2:jetpack:27>, <ore:plateIridiumAlloy>, <ic2:jetpack_electric:26>, <ore:blockGold>], 
 	[null, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, null]
 ]);
 mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:teleporter:1>, [
-	[<ore:plateQuartzBlack>, <ore:cofh:potion>, <ore:plateQuartzBlack>], 
+	[<ore:plateQuartzBlack>, <ore:gearDark>, <ore:plateQuartzBlack>], 
 	[<ore:torch>, <ore:compressed8xCobblestone>, <ore:torch>], 
 	[<ore:plateQuartzBlack>, <ore:netherStar>, <ore:plateQuartzBlack>]
 ]);

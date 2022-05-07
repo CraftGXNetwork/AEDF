@@ -1,19 +1,19 @@
 version:1343
 invertYMouse:false
 mouseSensitivity:0.5
-fov:0.0
+fov:0.75
 gamma:1.0
 saturation:0.0
-renderDistance:8
+renderDistance:2
 guiScale:0
 particles:2
 bobView:true
 anaglyph3d:false
-maxFps:260
+maxFps:255
 fboEnable:true
-difficulty:2
+difficulty:3
 fancyGraphics:false
-ao:0
+ao:2
 renderClouds:fast
 resourcePacks:[]
 incompatibleResourcePacks:[]
@@ -26,10 +26,10 @@ chatLinksPrompt:true
 chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
-enableVsync:true
+enableVsync:false
 useVbo:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 touchscreen:false
 overrideWidth:0
@@ -43,13 +43,13 @@ mipmapLevels:0
 forceUnicodeFont:false
 reducedDebugInfo:false
 useNativeTransport:true
-entityShadows:true
+entityShadows:false
 mainHand:right
 attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
-autoJump:true
+autoJump:false
 narrator:0
 tutorialStep:none
 key_key.attack:-100
@@ -93,11 +93,11 @@ key_Side Inventory Key:0
 key_Hub Expand Key:45
 key_Change Caster Focus:33
 key_Misc Caster Toggle:34
-key_key.craftpresence.config_keycode.name:41
+key_key.craftpresence.config_keycode.name:0
 key_Change mode key:34
 key_Fly Key:33
 key_Change Streak Key:45
-key_Vertical Key:37
+key_Vertical Key:0
 key_Save move Key:38
 key_BlackList Key:36
 key_keybind.baublesinventory:48
@@ -132,7 +132,6 @@ key_Toggle Chaos Gem (First):34
 key_Toggle Chaos Gem (All):34:SHIFT
 key_Use Return Home Charm:25:SHIFT
 key_key.dismount:42
-key_key.narrator:48:CONTROL
 key_key.toggle_focus.desc:15
 key_key.cofh.multimode:47
 key_key.jei.toggleOverlay:24:CONTROL
@@ -151,7 +150,7 @@ key_mekanism.key.armorMode:34
 key_mekanism.key.feetMode:35
 key_mekanism.key.voice:22
 key_key.draconicevolution.placeItem:25
-key_key.draconicevolution.toolConfig:0
+key_key.draconicevolution.toolConfig:24
 key_key.draconicevolution.toolProfileChange:43
 key_key.draconicevolution.armorProfileChange:43:ALT
 key_key.draconicevolution.toggleFlight:0
@@ -173,7 +172,7 @@ key_key.taiga.alt_action:29
 key_key.plustic_release_entity.desc:11
 key_key.plustic_toggle_gui.desc:23
 key_key.plustic_set_portal.desc:49
-key_key.plustic_brown_magic.desc:24
+key_key.plustic_brown_magic.desc:0
 key_key.plustic_toggle_tool.desc:51:ALT
 key_key.plustic_fruit_salad.desc:12:ALT
 key_key.plustic_mots.desc:13:ALT
@@ -221,8 +220,8 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:1.0
-soundCategory_music:1.0
+soundCategory_master:0.059602648
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
