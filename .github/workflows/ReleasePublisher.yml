@@ -14,7 +14,7 @@ jobs:
       with:
         type: 'zip'
         filename: 'AEDDF4.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig'
+        exclusions: '*.git* /*node_modules/* .editorconfig README.md'
     - name: Upload Release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
