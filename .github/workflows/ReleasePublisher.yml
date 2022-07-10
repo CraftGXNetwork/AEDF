@@ -13,7 +13,7 @@ jobs:
       uses: thedoctor0/zip-release@main
       with:
         type: 'zip'
-        filename: 'AEDDF4.zip'
+        filename: 'AEDF4.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig README.md'
     - name: Upload Release
       uses: "marvinpinto/action-automatic-releases@latest"
@@ -21,5 +21,5 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "1.12.2"
         prerelease: false
-        title: "AEDDF4 1.12.2"
-        files: 'AEDDF4.zip'
+        title: "AEDF4 1.12.2"
+        files: 'AEDF4.zip'
