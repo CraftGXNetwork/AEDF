@@ -1,180 +1,224 @@
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 
-print("Iniciando Banidos, Feito por CraftGX Proibida a COPIA");
+print("[Banidos] Iniciando Remoção de Items...");
 
-function Banir (item as IItemStack, lore as string, hidejei as bool){
-	recipes.remove(item);
-	if(hidejei == true){
-		mods.jei.JEI.hide(item);
-	}
-	item.addTooltip("");
-	if(lore == ""){
-		item.addTooltip("§c» §4Item Banido §c«");
-	} else {
-		item.addTooltip(lore);
-	}
-	item.addTooltip("");
+var banned_lore as string = "§c» §4Item Banido.";
+var motivo_lore as string = "§c» §eMotivo: ";
+var _lore_sp as string = "";
+var items as int = 0;
+
+function Banir (item as IItemStack, 
+	bnlore as string,
+	mtlore as string,
+	hide as bool) {
+		
+	items += 1; # Contagem de Items Banidos
+
+	recipes.remove(item);	
+	if(hide) mods.jei.JEI.hide(item);
+	
+	if(bnlore == "") bnlore = banned_lore;
+	if(mtlore == "") mtlore = "Não Informado.";
+	
+	item.addTooltip(_lore_sp);
+	item.addTooltip(bnlore);
+	item.addTooltip(motivo_lore + mtlore);
+	item.addTooltip(_lore_sp);
 }
 
+# Draconic Evolution
+Banir(<draconicevolution:celestial_manipulator>, "", "", false);
+Banir(<draconicevolution:draconic_spawner>, "", "", false);
+Banir(<draconicevolution:draconium_chest>, "", "", false);
+Banir(<draconicevolution:celestial_manipulator>, "", "", false);
+Banir(<draconicevolution:reactor_component:1>, "", "", false);
+Banir(<draconicevolution:reactor_part:1>, "", "", false);
+Banir(<draconicevolution:reactor_part:2>, "", "", false);
 
+# Tinker's Construct
+Banir(<tconstruct:throwball>, "", "", false);
+Banir(<tconstruct:throwball:1>, "", "", false);
 
-#Draconic Evolution
-Banir(<draconicevolution:celestial_manipulator>, "§c» §4Item Banido.", false); #Celestial Manipulator
-Banir(<tconstruct:throwball>, "§c» §4Item Banido.", false);
-Banir(<industrialforegoing:black_hole_tank>, "§c» §4Item Banido.", false);
-Banir(<industrialforegoing:black_hole_unit>, "§c» §4Item Banido.", false);
-Banir(<industrialforegoing:black_hole_controller_reworked>, "§c» §4Item Banido.", false);
-Banir(<industrialforegoing:black_hole_controller>, "§c» §4Item Banido.", false);
-Banir(<industrialforegoing:villager_trade_exchanger>, "§c» §4Item Banido.", false);
-Banir(<industrialforegoing:item_splitter>, "§c» §4Item Banido.", false);
-Banir(<industrialforegoing:infinity_drill>, "§c» §4Item Banido.", false);
-Banir(<industrialupgrade:iu_bags>, "§c» §4Item Banido.", false);
-Banir(<industrialupgrade:adv_iu_bags>, "§c» §4Item Banido.", false);
-Banir(<industrialupgrade:imp_iu_bags>, "§c» §4Item Banido.", false);
-Banir(<industrialupgrade:basemachine1:11>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:satchel>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:satchel:1>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:satchel:2>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:satchel:3>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:satchel:4>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:cache>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:strongbox>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:device:5>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:device:6>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:florb>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:morb>, "§c» §4Item Banido.", false);
-Banir(<thermalexpansion:morb:1>, "§c» §4Item Banido.", false);
-Banir(<appliedenergistics2:tiny_tnt>, "§c» §4Item Banido.", false);
-Banir(<botania:laputashard:19>, "§c» §4Item Banido.", false);
-Banir(<botania:laputashard:14>, "§c» §4Item Banido.", false);
-Banir(<botania:laputashard:9>, "§c» §4Item Banido.", false);
-Banir(<botania:laputashard:4>, "§c» §4Item Banido.", false);
-Banir(<botania:laputashard>, "§c» §4Item Banido.", false);
-Banir(<botania:cobblerod>, "§c» §4Item Banido.", false);
-Banir(<botania:skydirtrod>, "§c» §4Item Banido.", false);
-Banir(<botania:dirtrod>, "§c» §4Item Banido.", false);
-Banir(<botania:terraformrod>, "§c» §4Item Banido.", false);
-Banir(<botania:exchangerod>, "§c» §4Item Banido.", false);
-Banir(<botania:diviningrod>, "§c» §4Item Banido.", false);
-Banir(<botania:gravityrod>, "§c» §4Item Banido.", false);
-Banir(<botania:missilerod>, "§c» §4Item Banido.", false);
-Banir(<botania:virus>, "§c» §4Item Banido.", false);
-Banir(<botania:virus:1>, "§c» §4Item Banido.", false);
-Banir(<botania:slingshot>, "§c» §4Item Banido.", false);
-Banir(<botania:enderhand>, "§c» §4Item Banido.", false);
-Banir(<botania:blackholetalisman>, "§c» §4Item Banido.", false);
-Banir(<botania:firerod>, "§c» §4Item Banido.", false);
-Banir(<botania:tornadorod>, "§c» §4Item Banido.", false);
-Banir(<botania:waterrod>, "§c» §4Item Banido.", false);
-Banir(<botania:smeltrod>, "§c» §4Item Banido.", false);
-Banir(<astralsorcery:itemilluminationwand>, "§c» §4Item Banido.", false);
-Banir(<astralsorcery:itemarchitectwand>, "§c» §4Item Banido.", false);
-Banir(<astralsorcery:itemexchangewand>, "§c» §4Item Banido.", false);
-Banir(<techreborn:nuke>, "§c» §4Item Banido.", false);
-Banir(<techreborn:chunk_loader>, "§c» §4Item Banido. §eMotivo: COMPRAR NA LOJA§c «", false);
-Banir(<actuallyadditions:block_firework_box>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_item_viewer>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_item_viewer_hopping>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_ranged_collector>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:item_drill_upgrade_block_placing>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:item_mining_lens>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:item_player_probe>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:item_void_bag>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:item_bag>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_phantom_energyface>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_directional_breaker>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_miner>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_phantomface>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_phantom_liquiface>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_phantom_redstoneface>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_phantom_placer>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_phantom_breaker>, "§c» §4Item Banido.", false);
-Banir(<actuallyadditions:block_player_interface>, "§c» §4Item Banido.", false);
-Banir(<enderio:block_buffer:1>, "§c» §4Item Banido.", false);
-Banir(<enderio:block_buffer:2>, "§c» §4Item Banido.", false);
-Banir(<enderio:block_buffer>, "§c» §4Item Banido.", false);
-Banir(<enderio:block_inventory_panel>, "§c» §4Item Banido.", false);
-Banir(<thaumcraft:seal:5>, "§c» §4Item Banido.", false);
-Banir(<thaumcraft:seal:6>, "§c» §4Item Banido.", false);
-Banir(<thaumcraft:seal:12>, "§c» §4Item Banido.", false);
-Banir(<thaumcraft:seal:13>, "§c» §4Item Banido.", false);
-Banir(<thaumcraft:seal:16>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:7>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:8>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:9>, "§c» §4Item Banido.", false);
-Banir(<rftools:builder>, "§c» §4Item Banido.", false);
-Banir(<rftools:shield_block1>, "§c» §4Item Banido.", false);
-Banir(<rftools:shield_block2>, "§c» §4Item Banido.", false);
-Banir(<rftools:shield_block3>, "§c» §4Item Banido.", false);
-Banir(<rftools:shield_block4>, "§c» §4Item Banido.", false);
-Banir(<rftools:spawner>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:10>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:2>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:3>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:4>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:5>, "§c» §4Item Banido.", false);
-Banir(<rftools:shape_card:6>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:57>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:82>, "§c» §4Item Banido. §eMotivo: COMPRAR NA LOJA§c «", false);
-Banir(<ic2:te:2>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:1>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:22>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:24>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:40>, "§c» §4Item Banido.", false);
-Banir(<ic2:mining_laser>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:35>, "§c» §4Item Banido.", false);
-Banir(<ic2:dynamite>, "§c» §4Item Banido.", false);
-Banir(<ic2:dynamite_sticky>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:91>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:60>, "§c» §4Item Banido.", false);
-Banir(<ic2:te:66>, "§c» §4Item Banido.", false);
-Banir(<mekanism:flamethrower>, "§c» §4Item Banido.", false);
-Banir(<mekanism:cardboardbox>, "§c» §4Item Banido.", false);
-Banir(<mekanism:robit>, "§c» §4Item Banido.", false);
-Banir(<mekanism:basicblock:6>, "§c» §4Item Banido.", false);
-Banir(<mekanism:basicblock:6>, "§c» §4Item Banido.", false);
-Banir(<mekanism:basicblock:6>, "§c» §4Item Banido.", false);
-Banir(<mekanism:basicblock:6>, "§c» §4Item Banido.", false);
-Banir(<mekanism:basicblock:6>, "§c» §4Item Banido.", false);
-Banir(<mekanismgenerators:generator:6>, "§c» §4Item Banido.", false);
-Banir(<mekanism:obsidiantnt>, "§c» §4Item Banido.", false);
-Banir(<mekanism:anchorupgrade>, "§c» §4Item Banido. §eMotivo: COMPRAR NA LOJA§c «", false);
-Banir(<draconicevolution:draconic_spawner>, "§c» §4Item Banido.", false);
-Banir(<draconicevolution:draconium_chest>, "§c» §4Item Banido.", false);
-Banir(<draconicevolution:celestial_manipulator>, "§c» §4Item Banido.", false);
-Banir(<draconicevolution:reactor_component:1>, "§c» §4Item Banido.", false);
-Banir(<draconicevolution:reactor_part:1>, "§c» §4Item Banido.", false);
-Banir(<draconicevolution:reactor_part:2>, "§c» §4Item Banido.", false);
-Banir(<avaritia:endest_pearl>, "§c» §4Item Banido.", false);
-Banir(<avaritia:infinity_hoe>, "§c» §4Item Banido.", false);
-Banir(<avaritia:infinity_pickaxe>, "§c» §4Item Banido.", false);
-Banir(<avaritia:infinity_axe>, "§c» §4Item Banido.", false);
-Banir(<avaritia:infinity_shovel>, "§c» §4Item Banido.", false);
-Banir(<bloodmagic:sigil_transposition>, "§c» §4Item Banido.", false);
-Banir(<bloodarsenal:sigil_augmented_holding>, "§c» §4Item Banido.", false);
-Banir(<bloodmagic:sigil_water>, "§c» §4Item Banido.", false);
-Banir(<bloodmagic:sigil_lava>, "§c» §4Item Banido.", false);
-Banir(<bloodmagic:sigil_green_grove>, "§c» §4Item Banido.", false);
-Banir(<bloodmagic:sigil_blood_light>, "§c» §4Item Banido.", false);
-Banir(<bloodmagic:sigil_holding>, "§c» §4Item Banido.", false);
-Banir(<bloodarsenal:sigil_lightning>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:interactionproxy>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:quarryproxy>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:quarry>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:teleporter>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:chunkloader>, "§c» §4Item Banido. §eMotivo: COMPRAR NA LOJA§c «", false);
-Banir(<extrautils2:screen>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:largishchest>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:itemdestructionwand>, "§c» §4Item Banido.", false);
-Banir(<extrautils2:ingredients:10>, "§c» §4Item Banido.", false);
-Banir(<tconstruct:throwball:1>, "§c» §4Item Banido.", false);
-Banir(<darkutils:fake_tnt>, "§c» §4Item Banido.", false); 
-Banir(<thaumcraft:bottle_taint>, "§c» §4Item Banido.", false); 
-Banir(<avaritia:extreme_crafting_table>, "§c» §4Item Removido. §eMotivo: Usar A Outra Craft Table§c «", false);
-Banir(<extrautils2:bagofholding>, "§c» §4Item Banido.", false); 
-Banir(<rftools:shape_card>, "§c» §4Item Banido.", false); 
-Banir(<rftools:shape_card:1>, "§c» §4Item Banido.", false);
-Banir(<conarm:travel_sack>, "§c» §4Item Banido.", false);
+# Industrial Foregoing
+Banir(<industrialforegoing:black_hole_tank>, "", "", false);
+Banir(<industrialforegoing:black_hole_unit>, "", "", false);
+Banir(<industrialforegoing:black_hole_controller_reworked>, "", "", false);
+Banir(<industrialforegoing:black_hole_controller>, "", "", false);
+Banir(<industrialforegoing:villager_trade_exchanger>, "", "", false);
+Banir(<industrialforegoing:item_splitter>, "", "", false);
+Banir(<industrialforegoing:infinity_drill>, "", "", false);
+Banir(<industrialupgrade:iu_bags>, "", "", false);
+Banir(<industrialupgrade:adv_iu_bags>, "", "", false);
+Banir(<industrialupgrade:imp_iu_bags>, "", "", false);
+Banir(<industrialupgrade:basemachine1:11>, "", "", false);
 
-print("Banidos iniciado com sucesso");
+# Thermal Expansion
+Banir(<thermalexpansion:satchel>, "", "", false);
+Banir(<thermalexpansion:satchel:1>, "", "", false);
+Banir(<thermalexpansion:satchel:2>, "", "", false);
+Banir(<thermalexpansion:satchel:3>, "", "", false);
+Banir(<thermalexpansion:satchel:4>, "", "", false);
+Banir(<thermalexpansion:cache>, "", "", false);
+Banir(<thermalexpansion:strongbox>, "", "", false);
+Banir(<thermalexpansion:device:5>, "", "", false);
+Banir(<thermalexpansion:device:6>, "", "", false);
+Banir(<thermalexpansion:florb>, "", "", false);
+Banir(<thermalexpansion:morb>, "", "", false);
+Banir(<thermalexpansion:morb:1>, "", "", false);
+
+# Applied Energistics 2
+Banir(<appliedenergistics2:tiny_tnt>, "", "", false);
+
+# Botania
+Banir(<botania:laputashard:19>, "", "", false);
+Banir(<botania:laputashard:14>, "", "", false);
+Banir(<botania:laputashard:9>, "", "", false);
+Banir(<botania:laputashard:4>, "", "", false);
+Banir(<botania:laputashard>, "", "", false);
+Banir(<botania:cobblerod>, "", "", false);
+Banir(<botania:skydirtrod>, "", "", false);
+Banir(<botania:dirtrod>, "", "", false);
+Banir(<botania:terraformrod>, "", "", false);
+Banir(<botania:exchangerod>, "", "", false);
+Banir(<botania:diviningrod>, "", "", false);
+Banir(<botania:gravityrod>, "", "", false);
+Banir(<botania:missilerod>, "", "", false);
+Banir(<botania:virus>, "", "", false);
+Banir(<botania:virus:1>, "", "", false);
+Banir(<botania:slingshot>, "", "", false);
+Banir(<botania:enderhand>, "", "", false);
+Banir(<botania:blackholetalisman>, "", "", false);
+Banir(<botania:firerod>, "", "", false);
+Banir(<botania:tornadorod>, "", "", false);
+Banir(<botania:waterrod>, "", "", false);
+Banir(<botania:smeltrod>, "", "", false);
+
+# Astral Sorcery
+Banir(<astralsorcery:itemilluminationwand>, "", "", false);
+Banir(<astralsorcery:itemarchitectwand>, "", "", false);
+Banir(<astralsorcery:itemexchangewand>, "", "", false);
+
+# Tech Reborn
+Banir(<techreborn:nuke>, "", "", false);
+Banir(<techreborn:chunk_loader>, "§c» §4Item Removido", "Compre na loja.", false);
+
+# Actually Additions
+Banir(<actuallyadditions:block_firework_box>, "", "", false);
+Banir(<actuallyadditions:block_item_viewer>, "", "", false);
+Banir(<actuallyadditions:block_item_viewer_hopping>, "", "", false);
+Banir(<actuallyadditions:block_ranged_collector>, "", "", false);
+Banir(<actuallyadditions:item_drill_upgrade_block_placing>, "", "", false);
+Banir(<actuallyadditions:item_mining_lens>, "", "", false);
+Banir(<actuallyadditions:item_player_probe>, "", "", false);
+Banir(<actuallyadditions:item_void_bag>, "", "", false);
+Banir(<actuallyadditions:item_bag>, "", "", false);
+Banir(<actuallyadditions:block_phantom_energyface>, "", "", false);
+Banir(<actuallyadditions:block_directional_breaker>, "", "", false);
+Banir(<actuallyadditions:block_miner>, "", "", false);
+Banir(<actuallyadditions:block_phantomface>, "", "", false);
+Banir(<actuallyadditions:block_phantom_liquiface>, "", "", false);
+Banir(<actuallyadditions:block_phantom_redstoneface>, "", "", false);
+Banir(<actuallyadditions:block_phantom_placer>, "", "", false);
+Banir(<actuallyadditions:block_phantom_breaker>, "", "", false);
+Banir(<actuallyadditions:block_player_interface>, "", "", false);
+
+# Enderio
+Banir(<enderio:block_buffer:1>, "", "", false);
+Banir(<enderio:block_buffer:2>, "", "", false);
+Banir(<enderio:block_buffer>, "", "", false);
+Banir(<enderio:block_inventory_panel>, "", "", false);
+
+# Thaumcraft
+Banir(<thaumcraft:seal:5>, "", "", false);
+Banir(<thaumcraft:seal:6>, "", "", false);
+Banir(<thaumcraft:seal:12>, "", "", false);
+Banir(<thaumcraft:seal:13>, "", "", false);
+Banir(<thaumcraft:seal:16>, "", "", false);
+Banir(<thaumcraft:bottle_taint>, "", "", false);
+
+# Rf Tools
+Banir(<rftools:spawner>, "", "", false);
+Banir(<rftools:builder>, "", "", false);
+Banir(<rftools:shield_block1>, "", "", false);
+Banir(<rftools:shield_block2>, "", "", false);
+Banir(<rftools:shield_block3>, "", "", false);
+Banir(<rftools:shield_block4>, "", "", false);
+Banir(<rftools:shape_card>, "", "", false);
+Banir(<rftools:shape_card:1>, "", "", false);
+Banir(<rftools:shape_card:2>, "", "", false);
+Banir(<rftools:shape_card:3>, "", "", false);
+Banir(<rftools:shape_card:4>, "", "", false);
+Banir(<rftools:shape_card:5>, "", "", false);
+Banir(<rftools:shape_card:6>, "", "", false);
+Banir(<rftools:shape_card:7>, "", "", false);
+Banir(<rftools:shape_card:8>, "", "", false);
+Banir(<rftools:shape_card:9>, "", "", false);
+Banir(<rftools:shape_card:10>, "", "", false);
+
+# Industrial Craft 2
+Banir(<ic2:te:57>, "", "", false);
+Banir(<ic2:te:82>, "§c» §4Item Removido", "Compre na loja.", false);
+Banir(<ic2:te:2>, "", "", false);
+Banir(<ic2:te:1>, "", "", false);
+Banir(<ic2:te:22>, "", "", false);
+Banir(<ic2:te:24>, "", "", false);
+Banir(<ic2:te:40>, "", "", false);
+Banir(<ic2:mining_laser>, "", "", false);
+Banir(<ic2:te:35>, "", "", false);
+Banir(<ic2:dynamite>, "", "", false);
+Banir(<ic2:dynamite_sticky>, "", "", false);
+Banir(<ic2:te:91>, "", "", false);
+Banir(<ic2:te:60>, "", "", false);
+Banir(<ic2:te:66>, "", "", false);
+
+# Mekanism
+Banir(<mekanism:flamethrower>, "", "", false);
+Banir(<mekanism:cardboardbox>, "", "", false);
+Banir(<mekanism:robit>, "", "", false);
+Banir(<mekanism:basicblock:6>, "", "", false);
+Banir(<mekanism:basicblock:6>, "", "", false);
+Banir(<mekanism:basicblock:6>, "", "", false);
+Banir(<mekanism:basicblock:6>, "", "", false);
+Banir(<mekanism:basicblock:6>, "", "", false);
+Banir(<mekanismgenerators:generator:6>, "", "", false);
+Banir(<mekanism:obsidiantnt>, "", "", false);
+Banir(<mekanism:anchorupgrade>, "§c» §4Item Removido", "Compre na loja.", false);
+
+# Avaritia
+Banir(<avaritia:endest_pearl>, "", "", false);
+Banir(<avaritia:infinity_hoe>, "", "", false);
+Banir(<avaritia:infinity_pickaxe>, "", "", false);
+Banir(<avaritia:infinity_axe>, "", "", false);
+Banir(<avaritia:infinity_shovel>, "", "", false);
+Banir(<avaritia:extreme_crafting_table>, "§c» §4Item Removido", "Usar outra crafting table.", false);
+
+# Blood Magic
+Banir(<bloodmagic:sigil_transposition>, "", "", false);
+Banir(<bloodmagic:sigil_water>, "", "", false);
+Banir(<bloodmagic:sigil_lava>, "", "", false);
+Banir(<bloodmagic:sigil_green_grove>, "", "", false);
+Banir(<bloodmagic:sigil_blood_light>, "", "", false);
+Banir(<bloodmagic:sigil_holding>, "", "", false);
+
+# Blood Arsenal
+Banir(<bloodarsenal:sigil_lightning>, "", "", false);
+Banir(<bloodarsenal:sigil_augmented_holding>, "", "", false);
+
+# Extra Utils 2
+Banir(<extrautils2:interactionproxy>, "", "", false);
+Banir(<extrautils2:quarryproxy>, "", "", false);
+Banir(<extrautils2:quarry>, "", "", false);
+Banir(<extrautils2:teleporter>, "", "", false);
+Banir(<extrautils2:chunkloader>, "§c» §4Item Removido", "Compre na loja.", false);
+Banir(<extrautils2:screen>, "", "", false);
+Banir(<extrautils2:largishchest>, "", "", false);
+Banir(<extrautils2:itemdestructionwand>, "", "", false);
+Banir(<extrautils2:ingredients:10>, "", "", false);
+Banir(<extrautils2:bagofholding>, "", "", false);
+
+# Outros
+Banir(<darkutils:fake_tnt>, "", "", false);
+Banir(<conarm:travel_sack>, "", "", false);
+
+print("[Banidos] - Removidos " +items+ " items");
