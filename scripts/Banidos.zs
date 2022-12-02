@@ -36,7 +36,7 @@ Banir(<draconicevolution:reactor_component:1>, "", "", false);
 Banir(<draconicevolution:reactor_part:1>, "", "", false);
 Banir(<draconicevolution:reactor_part:2>, "", "", false);
 
-# Tinker's Construct
+# Tinkers Construct
 Banir(<tconstruct:throwball>, "", "", false);
 Banir(<tconstruct:throwball:1>, "", "", false);
 
